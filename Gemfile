@@ -19,6 +19,7 @@ gem 'active_model_serializers'
 gem 'momentjs-rails'
 # Front-end
 gem 'bootstrap-sass', '2.1'
+gem 'bootflat-rails', '~> 0.0.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 

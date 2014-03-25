@@ -135,7 +135,7 @@ $( document ).ready(function() {
       "reward[][delivery_date]": { required: true },
       "reward[][number]": { number: true },
       "campaign[contributor_reference]": { required: true },
-      "campaign[video_embed_id]": { minlength: 11 , maxlength: 11},
+      "campaign[video_embed_id]": { },
       "campaign[primary_call_to_action_button]": { required: true },
       "campaign[secondary_call_to_action_button]": { required: true },
       "campaign[comments_shortname]": { required: { depends: function(element) {
