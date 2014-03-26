@@ -1,11 +1,55 @@
-<div id="homepage">
-  <div class="container clearfix">
 
+<div class="row">
+<div class="">
+  <div class="span8 offset1">
+  <div id="myCarousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+                <div class="wrapper">
+                  <div class="hero-unit"><h1>Hero Unit<p class="lead">Floating over Carousel</p></h1></div>
+            </div>
+              <img src="/assets/example/bg1.jpg" alt="">
+
+      </div>
+      <div class="item">
+        <div class="wrapper">
+          <div class="drone">
+              <div class="hero-unit"><h1>Slide 2</h1></div>
+          </div>
+        </div>
+        <img src="/assets/images/drone.jpg" alt="">
+
+      </div>
+      <div class="item">
+                <div class="wrapper">
+                  <div class="hero-unit"><h1>Slide 3</h1></div>
+            </div>
+        <img src="/assets/example/bg_smartphones" alt="">
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+  </div>
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1>hello world</p>
+</div>
+    </div><div id="homepage">
+  <div class="container clearfix">
       <div class="homepage_content clearfix">
         <%= raw(@settings.homepage_content) %>
       </div>
 
     <div class="campaigns">
+    <p>homepage.html.erb</p>   
+    <!-- view id  -->
 
       <% if @campaigns.count > 0 %>
         <% @campaigns.each do |campaign| %>

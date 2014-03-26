@@ -1,5 +1,7 @@
 <div id="campaign">
 <div id="funding_area">
+<p>campaign.html.erb</p>
+
   <div class="container clearfix">
 
     <div class="center">
@@ -17,7 +19,7 @@
             <% if !@campaign.video_embed_id.blank? %>
               <div id="player" class="hidden" style="display: none;">
                 <object width="512" height="385">
-                  <param name="movie" value="https:<%= @campaign.video_embed_id %>?autohide=1&showinfo=0&rel=0&autoplay=1" />
+                  <param name="movie" value="https://www.youtube.com/v/<%= @campaign.video_embed_id %>?autohide=1&showinfo=0&rel=0&autoplay=1" />
                   <param name="allowFullScreen" value="true" />
                   <param name="allowscriptaccess" value="always" />
                   <embed src="https://www.youtube.com/v/<%= @campaign.video_embed_id %>?autohide=1&showinfo=0&rel=0&autoplay=1" type="application/x-shockwave-flash" width="512" height="385" allowscriptaccess="always" allowfullscreen="true"></embed>

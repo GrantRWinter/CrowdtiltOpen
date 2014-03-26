@@ -1,5 +1,20 @@
 #homepage {
 
+  .carousel .wrapper {
+  position:relative;
+
+}
+
+.carousel .hero-unit {
+  position:absolute;
+    z-index:1;
+    top:15px;
+    left:15px;
+    width:70%;
+}
+
+
+
   .homepage_content {
     margin-top: 40px;
   }
@@ -37,7 +52,7 @@
       }
 
       .placeholder {
-        width: 300px;
+        width: 190px;
         height: 143px;
         background: gray;
         margin-bottom: 5px;
@@ -53,7 +68,7 @@
       }
 
       #progress_bg {
-        height: 10px;
+        height: 5px;
         -moz-box-shadow: 0 1px 1px rgba(0,0,0,.41); /* drop shadow */
         -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.41); /* drop shadow */
         box-shadow: 0 1px 1px rgba(0,0,0,.41); /* drop shadow */
@@ -64,7 +79,7 @@
         background: #dbdbdb;
 
         #progress {
-          height: 10px;
+          height: 5px;
           -moz-box-shadow: 0 1px 1px rgba(0,0,0,.59); /* drop shadow */
           -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.59); /* drop shadow */
           box-shadow: 0 1px 1px rgba(0,0,0,.59); /* drop shadow */
