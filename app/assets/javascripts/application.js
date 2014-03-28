@@ -30,3 +30,5 @@
 //= require event_tracking
 //= require unsaved_changes.js
 //= require moment
+//= require scripts
+//= require slick.min
