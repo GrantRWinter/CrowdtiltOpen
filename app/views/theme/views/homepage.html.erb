@@ -68,7 +68,7 @@
               <% if campaign.video_placeholder.file? %>
                 <%= image_tag campaign.video_placeholder.url(:main), alt: "main_image" %>
               <% else %>
-                <%= image_tag "#{campaign.video_embed_id}/hqdefault.jpg", alt: "main_image" %>
+                <%= image_tag "https://img.youtube.com/vi/#{campaign.video_embed_id}/hqdefault.jpg", alt: "main_image" %>
               <% end %>
 
             <% else %>

@@ -1,3 +1,10 @@
+
+.stuff {
+  height: 30px;
+  background-color: blue;
+
+}
+
 #campaign {
   /*************************************
   ********** FUNDING AREA **************
@@ -21,9 +28,10 @@
     }
 
     #video {
+      margin-left: 5%;
       float: left;
-      width: 512px;
-      height: 385px;
+      width: 800px;
+      height: 600px;
       background: #fff;
       -moz-box-shadow: 0 2px 6px rgba(0,0,0,.39); /* drop shadow */
       -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.39); /* drop shadow */
@@ -37,8 +45,8 @@
 
     #image {
       float: left;
-      width: 512px;
-      height: 385px;
+      width: 800px;
+      height: 600px;
       -moz-box-shadow: 0 2px 6px rgba(0,0,0,.39); /* drop shadow */
       -webkit-box-shadow: 0 2px 6px rgba(0,0,0,.39); /* drop shadow */
       box-shadow: 0 2px 6px rgba(0,0,0,.39); /* drop shadow */

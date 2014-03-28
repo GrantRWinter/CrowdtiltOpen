@@ -1,8 +1,17 @@
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<div class="row">
+  <div class="col-md-offset-1 col-md-3 stuff"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 <div id="campaign">
 <div id="funding_area">
 <p>campaign.html.erb</p>
 
-  <div class="container clearfix">
+  <div class=" clearfix">
 
     <div class="center">
       <h2 class="campaign_title"><a href="<%= campaign_home_path(@campaign) %>"><%= @campaign.name %></a></h2>
@@ -27,8 +36,9 @@
               </div>
             <% end %>
           <% else %>
+          <!-- defers to this option. Explore why this is happening -->
             <% if !@campaign.video_embed_id.blank? %>
-              <iframe width='512' height='385' src="<%= @campaign.video_embed_id %>?rel=0"></iframe>
+              <iframe width='800' height='600' src="https://www.youtube.com/embed/<%= @campaign.video_embed_id %>?rel=0"></iframe>
             <% end %>
           <% end %>
         </div>
