@@ -40,7 +40,7 @@
           <% else %>
           <!-- defers to this option. Explore why this is happening -->
             <% if !@campaign.video_embed_id.blank? %>
-              <iframe width='800' height='600' src="https://www.youtube.com/embed/<%= @campaign.video_embed_id %>?rel=0"></iframe>
+              <iframe width='800' height='600' src="https://www.youtube.com/embed/<%= @campaign.video_embed_id %>?rel=0" allowfullscreen></iframe>
             <% end %>
           <% end %>
         </div>

@@ -30,10 +30,12 @@ $(document).ready(function(){
   });
   $('.responsive').slick({
     dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 5500,
     responsive: [
       {
         breakpoint: 1024,
@@ -64,8 +66,8 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     speed: 550,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 5500
   });
