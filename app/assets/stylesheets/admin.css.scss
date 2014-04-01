@@ -23,7 +23,19 @@
   }
 
   #admin_homepage, #admin_site_settings, #admin_customize, #admin_campaigns {
-
+    // git changes in commentable section below
+    /* Setting width for forms without additional divs for columns */
+    
+    .input-group .form-control {
+      width: 37.5%;
+    }
+ 
+    .form-control {
+      width: 40%;
+    }
+     
+     /* Done setting form widths */
+    
     fieldset {
       margin-bottom: 30px;
     }
@@ -40,7 +52,7 @@
 
       .explanation {
         float: right;
-        width: 400px;
+        width: 40%; //width: 400px;
       }
 
       .explanation.inline {
@@ -54,8 +66,10 @@
       }
 
       label {
-        margin-bottom: 15px;
+        display: block; //change
+        margin-bottom: 8px; //margin-bottom: 15px;
         font-size: 18px;
+        font-weight: 300; //change
       }
 
       label.inline {
@@ -65,29 +79,30 @@
 
     .additional_info_input {
       margin-top: 20px;
-      textarea {
-        width: 360px;
-      }
+    
+      // textarea {          //change  
+      //   width: 360px;
+      // }
     }
 
     #preset-amount, #min-amount {
       margin-left: 20px;
     }
+//change
+    // .currency {
+    //   position: relative;
 
-    .currency {
-      position: relative;
+    //   input {
+    //     padding-left: 24px;
+    //     width: 192px;
+    //   }
 
-      input {
-        padding-left: 24px;
-        width: 192px;
-      }
-
-      span {
-        position: absolute;
-        top: 5px;
-        left: 10px;
-      }
-    }
+    //   span {
+    //     position: absolute;
+    //     top: 5px;
+    //     left: 10px;
+    //   }
+    // }
 
     #rewards {
       .reference {
@@ -131,12 +146,12 @@
         border-radius: 3px;
         vertical-align: middle;
         cursor: move;
-
-        textarea {
-          width: 400px;
-          max-width: 400px;
-          margin-bottom: 0px;
-        }
+//change
+        // textarea {
+        //   width: 400px;
+        //   max-width: 400px;
+        //   margin-bottom: 0px;
+        // }
 
         .faq-delete {
           opacity: 0.5;
@@ -144,6 +159,12 @@
             opacity: 1;
           }
         }
+//change        
+        .form-control{
+          display: inline-block;
+          margin-right: 1%;
+        }
+//
       }
     }
 
